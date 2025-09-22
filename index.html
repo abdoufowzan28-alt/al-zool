@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الفوزان — غسيل وتلميع سيارات</title>
+  <meta name="description" content="الفوزان لغسيل السيارات في حلفا الجديدة — غسيل يدوي، تلميع، تنظيف داخلي، خدمة منزلية." />
+  <style>
+    :root{
+      --beige:#D7C4A3;
+      --red:#C62828;
+      --dark:#333;
+      --maxw:1100px;
+      font-family: "Tajawal", sans-serif;
+    }
+    body{margin:0;background:#fff;color:var(--dark);line-height:1.5}
+    .container{max-width:var(--maxw);margin:0 auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .logo{display:flex;align-items:center;gap:10px}
+    .logo .mark{width:48px;height:48px;background:var(--beige);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav a{margin:0 10px;color:var(--dark);text-decoration:none;font-weight:600}
+    .cta{background:var(--red);color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none}
+    .hero{background-image:url('https://via.placeholder.com/1400x500');background-size:cover;background-position:center;border-radius:10px;padding:60px 20px;color:#fff;margin:18px 0;position:relative}
+    .hero-overlay{background:linear-gradient(90deg, rgba(0,0,0,0.45), rgba(0,0,0,0.35));position:absolute;inset:0;border-radius:10px}
+    .hero-content{position:relative;z-index:2;max-width:900px}
+    .hero h1{font-size:34px;margin:0 0 10px}
+    .hero p{margin:0 0 18px}
+    .services{display:flex;gap:14px;flex-wrap:wrap;margin:20px 0}
+    .card{flex:1 1 220px;background:var(--beige);padding:18px;border-radius:10px;min-width:200px}
+    .booking{background:#f8f8f8;padding:18px;border-radius:10px;margin:20px 0}
+    label{display:block;margin-bottom:6px;font-weight:600}
+    input,select,textarea{width:100%;padding:10px;margin-bottom:10px;border-radius:6px;border:1px solid #ddd}
+    .btn-primary{background:var(--red);color:#fff;padding:10px 14px;border:none;border-radius:8px;cursor:pointer}
+    footer{margin-top:30px;padding:18px 0;border-top:1px solid #eee;color:#666}
+    /* responsive */
+    @media(max-width:800px){
+      .hero h1{font-size:26px}
+      header{flex-direction:column;align-items:flex-start;gap:10px}
+      nav{order:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">ف</div>
+        <div>
+          <div style="font-weight:800">الفوزان</div>
+          <div style="font-size:12px;color:#666">Al-Fawzan Car Wash</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">الخدمات</a>
+        <a href="#booking">الحجز</a>
+        <a href="#gallery">المعرض</a>
+        <a class="cta" href="#booking">احجز الآن</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-label="Hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>مرحباً في الفوزان — غسيل وتلميع احترافي لسيارتك</h1>
+        <p>خدمة يدوية متقنة، مواد آمنة، وأسعار واضحة. نخدم حلفا الجديدة.</p>
+        <a class="btn-primary" href="#booking">احجز موعد</a>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>خدماتنا</h2>
+      <div class="services">
+        <div class="card">
+          <h3>غسيل يدوي داخلي وخارجي</h3>
+          <p>تنظيف دقيق دون إتلاف الطلاء.</p>
+        </div>
+        <div class="card">
+          <h3>تلميع وإزالة خدوش</h3>
+          <p>لمعان وحماية لسطح سيارتك.</p>
+        </div>
+        <div class="card">
+          <h3>تنظيف داخلي وتعقيم</h3>
+          <p>تنظيف شامل وإزالة الروائح.</p>
+        </div>
+        <div class="card">
+          <h3>كوفير عام</h3>
+          <p>نأتي لك أينما كنت (خدمة إضافية).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="booking">
+      <h2>نموذج حجز سريع</h2>
+      <form id="bookingForm" onsubmit="event.preventDefault(); alert('تم إرسال طلب الحجز — سنعاود الاتصال بك');">
+        <label for="name">الاسم</label>
+        <input id="name" required placeholder="اسمك الكامل" />
+        <label for="phone">رقم الهاتف</label>
+        <input id="phone" required placeholder="0900160444" />
+        <label for="service">اختار الخدمة</label>
+        <select id="service">
+          <option>غسيل يدوي</option>
+          <option>تلميع</option>
+          <option>تنظيف داخلي</option>
+          <option>كوفير عام</option>
+        </select>
+        <label for="date">تاريخ ووقت مفضّل (اختياري)</label>
+        <input id="date" placeholder="مثال: 2025-09-20 10:00" />
+        <button class="btn-primary" type="submit">إرسال الحجز</button>
+      </form>
+    </section>
+
+    <section id="gallery">
+      <h2>معرض الصور</h2>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <img src="ab2.jpg.jpg" alt="w" style="width:500px;border-radius:8px"/>
+        <img src="ab4.jpg.jpg" alt="صورة" style="width:400px;border-radius:8px" />
+        <img src="ab3.jpg.jpg" alt="صورة" style="width:500px;border-radius:8px" />
+        <img src="ab1.JPG.jpg" style="width:400px;border-border-radius:8px"/>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+        <div>مركز الفوزان لغسيل السيارات — حلفا الجديدة</div>
+        <div>الهاتف: <strong>+249916163539</strong> — واتساب: <a href="#">اضغط هنا</a></div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
