@@ -8,8 +8,8 @@
   <style>
     :root{
       --beige:#622557;
-      --red:#000000;
-      --dark:#f6f6f6;
+      --red:#161414;
+      --dark:#e7dcdc;
       --maxw:1100px;
       font-family: "Tajawal", sans-serif;
     }
@@ -21,15 +21,15 @@
     nav a{margin:0 10px;color:var(--dark);text-decoration:none;font-weight:600}
     .cta{background:var(--red);color:#84258b;padding:10px 16px;border-radius:6px;text-decoration:none}
     .hero{background-image:url('https://via.placeholder.com/1400x500');background-size:cover;background-position:center;border-radius:10px;padding:60px 20px;color:#fff;margin:18px 0;position:relative}
-    .hero-overlay{background:linear-gradient(90deg, rgb(237, 5, 40), rgb(16, 9, 144));position:absolute;inset:0;border-radius:10px}
+    .hero-overlay{background:linear-gradient(90deg, rgb(152, 19, 39), rgb(16, 9, 144));position:absolute;inset:0;border-radius:10px}
     .hero-content{position:relative;z-index:2;max-width:900px}
     .hero h1{font-size:34px;margin:0 0 10px}
     .hero p{margin:0 0 18px}
     .services{display:flex;gap:14px;flex-wrap:wrap;margin:20px 0}
-    .card{flex:1 1 220px;background:var(--beige);padding:18px;border-radius:10px;min-width:200px}
-    .booking{background:#b8bec1d0;padding:18px;border-radius:10px;margin:20px 0}
-    label{display:block;margin-bottom:6px;font-weight:600}
-    input,select,textarea{width:100%;padding:10px;margin-bottom:10px;border-radius:6px;border:1px solid #a879a5}
+    .card{flex:1 1 220px;background:var(--beige);padding:18px;border-radius:10px;min-width:200px }
+    .booking{background:#384f5bd0;padding:18px;border-radius:10px;margin:20px 0 }
+    label{display:block;margin-bottom:6px;font-weight:600 ; color:#f0ecec}
+    input,select,textarea{ background-color:#0d3949 ;width:100%;padding:10px;margin-bottom:10px;border-radius:6px;border:1px solid #0b0101}
     .btn-primary{background:var(--red);color:#959195;padding:10px 14px;border:none;border-radius:8px;cursor:pointer}
     footer{margin-top:30px;padding:18px 0;border-top:1px solid #318b8b;color:#04305c79}
     /* responsive */
@@ -63,7 +63,8 @@
       <div class="hero-content">
         <h1>مرحباً   في   الزول   كلين</h1>
         <p>خدمة يدوية متقنة، مواد آمنة، وأسعار واضحة. نخدم حلفا الجديدة.</p>
-        <a class="btn-primary" href="#booking">احجز موعد</a>
+        <a class="btn-primary" href="#booking" >احجز موعد  </a>
+        
       </div>
     </section>
 
@@ -95,7 +96,7 @@
         <label for="name">الاسم</label>
         <input id="name" required placeholder="اسمك الكامل" />
         <label for="phone">رقم الهاتف</label>
-        <input id="phone" required placeholder="0900160444" />
+        <input id="phone" required placeholder="05********" />
         <label for="service">اختار الخدمة</label>
         <select id="service">
           <option>غسيل يدوي</option>
@@ -112,23 +113,21 @@
   <label for="message">معلومات الحجز:</label> 
   <textarea name="message" id="message" required></textarea>
   <button type="submit"> <strong>احجــز الان</strong></button>
-</form>
-
+</form> 
       
     </section>
-
     <section id="gallery">
       <h2>معرض الصور</h2>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
-      <img src="ab2.jpg.jpg" alt="w" style="width:500px;border-radius:8px"/>
-        <img src="ab4.jpg.jpg" alt="صورة" style="width:400px;border-radius:8px" />
-        <img src="ab3.jpg.jpg" alt="صورة" style="width:500px;border-radius:8px" />
-        <img src="ab1.JPG.jpg" style="width:400px;border-border-radius:8px"/>
+      <img src="ab2.jpg.jpg" alt="w" style="width:400px;border-radius:8px"/>
+        <img src="ab4.jpg.jpg" alt="صورة" style= "width:400px;border-radius:8px" />
+        <img src="ab3.jpg.jpg" alt="صورة" style="width:400px;border-radius:8px" />
+        <img src="ab1.JPG.jpg" style="width:400px; border-radius:8px"/>
       </div>
     </section>
 
     <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap ; color:#f6f6f6">
         <div>المملكه العربيه\الاحساء\العزيزة</div>
         <div>الهاتف: <strong>+249916163539</strong> — واتساب: <a href="#">اضغط هنا</a></div>
        <a href="https://maps.app.goo.gl/XWj4NjaEX5gYbZ2C8?g_st=ipc" target="_blank" rel="noopener">مواقنا على الخريطه  </a>
