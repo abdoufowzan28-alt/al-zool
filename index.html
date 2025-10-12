@@ -4,22 +4,28 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title> الزول كلين - لخدمات السيارات   </title>
+   
   <meta name="description" content="الفوزان لغسيل السيارات في حلفا الجديدة — غسيل يدوي، تلميع، تنظيف داخلي، خدمة منزلية." />
-  <style>
-    :root{
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <style> 
+  
+     :root{
       --beige:#622557;
       --red:#161414;
-      --dark:#e7dcdc;
+      --dark:#000000;
       --maxw:1100px;
       font-family: "Tajawal", sans-serif;
     }
-    body{margin:0;background:#0d0a6f;color:var(--dark);line-height:1.5}
+    body{margin:0;background:#191939;color:var(--dark);line-height:1.5}
     .container{max-width:var(--maxw);margin:0 auto;padding:20px}
     header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-    .logo{display:flex;align-items:center;gap:10px}
+    .logo{display:flex;align-items:center;gap:20px}
     .logo .mark{width:48px;height:48px;background:var(--beige);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700}
     nav a{margin:0 10px;color:var(--dark);text-decoration:none;font-weight:600}
-    .cta{background:var(--red);color:#84258b;padding:10px 16px;border-radius:6px;text-decoration:none}
+    .cta{background:var(--red);color:#92279a;padding:10px 16px;border-radius:6px;text-decoration:none}
     .hero{background-image:url('https://via.placeholder.com/1400x500');background-size:cover;background-position:center;border-radius:10px;padding:60px 20px;color:#fff;margin:18px 0;position:relative}
     .hero-overlay{background:linear-gradient(90deg, rgb(152, 19, 39), rgb(16, 9, 144));position:absolute;inset:0;border-radius:10px}
     .hero-content{position:relative;z-index:2;max-width:900px}
@@ -28,8 +34,8 @@
     .services{display:flex;gap:14px;flex-wrap:wrap;margin:20px 0}
     .card{flex:1 1 220px;background:var(--beige);padding:18px;border-radius:10px;min-width:200px }
     .booking{background:#384f5bd0;padding:18px;border-radius:10px;margin:20px 0 }
-    label{display:block;margin-bottom:6px;font-weight:600 ; color:#f0ecec}
-    input,select,textarea{ background-color:#0d3949 ;width:100%;padding:10px;margin-bottom:10px;border-radius:6px;border:1px solid #0b0101}
+    label{display:block;margin-bottom:6px;font-weight:600 ; color:#e8d8d8}
+    input,select,textarea{ background-color:#140e65dc ;width:100%;padding:10px;margin-bottom:10px;border-radius:6px;border:1px solid #0b0101}
     .btn-primary{background:var(--red);color:#959195;padding:10px 14px;border:none;border-radius:8px;cursor:pointer}
     footer{margin-top:30px;padding:18px 0;border-top:1px solid #318b8b;color:#04305c79}
     /* responsive */
@@ -39,12 +45,13 @@
       nav{order:2}
     }
   </style>
+  <link rel="stylesheet" href="x.css" />
 </head>
 <body>
   <div class="container">
     <header>
       <div class="logo">
-        <div class="mark">Z</div>
+        <div class="mark"><img src="logo.jpg" alt="logo.jpg"  style="width:50px ; height: 50px; border-radius: 10px " /></div>
         <div>
           <div style="font-weight:800">الزوول</div>
           <div style="font-size:12px;color:#666">Al-Zool car wash</div>
@@ -112,7 +119,7 @@
   <input type="email" name="email" id="email" required>
   <label for="message">معلومات الحجز:</label> 
   <textarea name="message" id="message" required></textarea>
-  <button type="submit"> <strong>احجــز الان</strong></button>
+  <button type="submit"> <strong> submit\ احجز لان</strong></button>
 </form> 
       
     </section>

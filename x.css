@@ -1,0 +1,20 @@
+.card {
+    background: hsl(233, 91%, 14%);
+    color: #d8dee1;
+    border: 10px;
+    box-shadow: 0cqi 0 10px 5px rgba(2, 1, 20, 0.935);
+    padding: 5px;
+    
+}
+.hero {
+    box-shadow: 0cqh 0 10px 5px rgba(9, 2, 7, 0.935);
+    padding: 50px;
+}
+.booking {
+    background: hsla(342, 76%, 28%, 0.999);
+    color: #edebebda;
+    border: 10px;
+    box-shadow: 0cqi 0 10px 5px rgba(0, 0, 0, 0.838);
+    padding: 20px;
+}
+
