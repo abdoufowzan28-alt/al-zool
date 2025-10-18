@@ -62,3 +62,31 @@
   transition: background-color 0.3s ease;
   transform: translateY(5px);
 }
+.item img.the{
+  width: 25%;
+  height: auto;
+  border-radius: 600px;
+
+
+  
+
+}
+img.the{
+  animation: moveImages 5s infinite alternate;
+
+}
+img.the:hover{
+  
+  cursor:pointer;
+ transform-origin: 0ch;
+}
+@keyframes moveImages {
+  50%{
+    transform: rotate(0deg);
+
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
