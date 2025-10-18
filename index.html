@@ -1,12 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title> الزول كلين - لخدمات السيارات   </title>
    
   <meta name="description" content="الفوزان لغسيل السيارات في حلفا الجديدة — غسيل يدوي، تلميع، تنظيف داخلي، خدمة منزلية." />
-  
+  <link rel="stylesheet" href="x.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
@@ -45,7 +46,6 @@
       nav{order:2}
     }
   </style>
-  <link rel="stylesheet" href="x.css" />
 </head>
 <body>
   <div class="container">
@@ -55,8 +55,6 @@
         <div>
           <div style="font-weight:800">الزوول</div>
           <div style="font-size:12px;color:#666">Al-Zool car wash</div>
-        </div>
-      </div>
       <nav>
         <a href="#services">الخدمات</a>
         <a href="#booking">الحجز</a>
@@ -64,17 +62,14 @@
         <a class="cta" href="#booking">احجز الآن</a>
       </nav>
     </header>
-
     <section class="hero" aria-label="Hero">
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <h1>مرحباً   في   الزول   كلين</h1>
         <p>خدمة يدوية متقنة، مواد آمنة، وأسعار واضحة. نخدم حلفا الجديدة.</p>
         <a class="btn-primary" href="#booking" >احجز موعد  </a>
-        
       </div>
     </section>
-
     <section id="services">
       <h2>خدماتنا</h2>
       <div class="services">
@@ -94,7 +89,6 @@
           <h3>كوفير عام</h3>
           <p>نأتي لك أينما كنت (خدمة إضافية).</p>
         </div>
-      </div>
     </section>
 
     <section id="booking" class="booking">
@@ -112,32 +106,33 @@
           <option>كوفير عام</option>
         </select>
         <label for="date">تاريخ ووقت مفضّل (اختياري)</label>
-        <input id="date" placeholder="مثال: 2025-09-20 10:00" />
+        <input id="date" type="datetime-local" />
       </form>  
         <form action="https://formspree.io/f/mkgqvkge" method="POST">
   <label for="email">الإيميل:</label>
   <input type="email" name="email" id="email" required>
   <label for="message">معلومات الحجز:</label> 
   <textarea name="message" id="message" required></textarea>
-  <button type="submit"> <strong> submit\ احجز لان</strong></button>
+  <button class="bt" type="submit"> <strong> submit\ احجز لان</strong></button>
 </form> 
       
     </section>
     <section id="gallery">
       <h2>معرض الصور</h2>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
-      <img src="ab2.jpg.jpg" alt="w" style="width:400px;border-radius:8px"/>
-        <img src="ab4.jpg.jpg" alt="صورة" style= "width:400px;border-radius:8px" />
-        <img src="ab3.jpg.jpg" alt="صورة" style="width:400px;border-radius:8px" />
-        <img src="ab1.JPG.jpg" style="width:400px; border-radius:8px"/>
+      <img src="ab2.jpg" alt="w" style="width:400px;border-radius:8px"/>
+        <img src="ab4.jpg" alt="صورة" style= "width:400px;border-radius:20px" />
+        <img src="ab3.jpg" alt="صورة" style="width:400px;border-radius:8px" />
+        <img src="ab1.jpg" style="width:400px; border-radius:8px"/>
+        <img src="backgr.jpg" style="width:200cap; height:100px;  border-radius:1000px"/>
       </div>
     </section>
-
+<script  src="v.js"></script>
     <footer>
       <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap ; color:#f6f6f6">
-        <div>المملكه العربيه\الاحساء\العزيزة</div>
+        <div>المملكه العربيه السعوديه \ الاحساء \ العزيزة</div>
         <div>الهاتف: <strong>+249916163539</strong> — واتساب: <a href="#">اضغط هنا</a></div>
-       <a href="https://maps.app.goo.gl/XWj4NjaEX5gYbZ2C8?g_st=ipc" target="_blank" rel="noopener">مواقنا على الخريطه  </a>
+       <a class="ra" href="https://maps.app.goo.gl/XWj4NjaEX5gYbZ2C8?g_st=ipc" target="_blank" rel="noopener">موقنا على الخريطه  </a>
       </div>
     </footer>
   </div>

@@ -1,20 +1,64 @@
 .card {
-    background: hsl(233, 91%, 14%);
-    color: #d8dee1;
-    border: 10px;
-    box-shadow: 0cqi 0 10px 5px rgba(2, 1, 20, 0.935);
-    padding: 5px;
-    
+  border: 2px solid #0512ffb8;
+  border-radius: 8px;
+  background-color: rgb(7, 49, 70);
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 2px 2px 12px rgb(19, 108, 211);
 }
-.hero {
-    box-shadow: 0cqh 0 10px 5px rgba(9, 2, 7, 0.935);
-    padding: 50px;
+.card h1 {
+  margin-top: 0;
+  color: #0b3d91;
 }
-.booking {
-    background: hsla(342, 76%, 28%, 0.999);
-    color: #edebebda;
-    border: 10px;
-    box-shadow: 0cqi 0 10px 5px rgba(0, 0, 0, 0.838);
-    padding: 20px;
+.card:hover {
+  box-shadow: 4px 4px 16px rgb(218, 11, 11);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
 }
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  border-image: round rgb(12, 110, 189) 30;
+  border-image-source: -moz-radial-gradient();
+}
+.bt{
+  background-color: #4d053c;
+  color: rgb(245, 235, 235);
+  padding: 20px 200px;
+  border: none;
+  border-radius: 33px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.bt:hover {
+  background-color: 
+  #2b0bfc;
+  color: rgb(249, 248, 255);
+  transition: background-color 0.3s ease;
+  transform: translateY(5px);
+}
+.gallery img:hover {
+  width: 300px;
 
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.ra{
+  background-color: #4d053c;
+  color: rgb(245, 235, 235);
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.ra:hover {
+  background-color: 
+  #2b0bfc;
+  color: rgb(249, 248, 255);
+  transition: background-color 0.3s ease;
+  transform: translateY(5px);
+}
