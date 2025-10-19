@@ -1,7 +1,7 @@
 .card {
   border: 2px solid #0512ffb8;
   border-radius: 8px;
-  background-color: rgb(7, 49, 70);
+  background-color: rgb(20, 137, 196);
   padding: 16px;
   margin: 16px;
   box-shadow: 2px 2px 12px rgb(19, 108, 211);
@@ -24,7 +24,7 @@
   border-image-source: -moz-radial-gradient();
 }
 .bt{
-  background-color: #4d053c;
+  background-color: #bc0992ba;
   color: rgb(245, 235, 235);
   padding: 20px 20px;
   border: none;
@@ -49,7 +49,7 @@
   transition: transform 0.3s ease;
 }
 .ra{
-  background-color: #4d053c;
+  background-color: #1b0115;
   color: rgb(245, 235, 235);
   padding: 10px 16px;
   border-radius: 6px;
